@@ -5,6 +5,7 @@
  */
 package sistema;
 
+import static java.awt.Frame.MAXIMIZED_BOTH;
 import sistema.classes.frmMenu;
 
 /**
@@ -19,6 +20,7 @@ public class Main {
 	public static void main(String[] args) {
 		// TODO code application logic here
                 frmMenu menu = new frmMenu();
+                menu.setExtendedState(MAXIMIZED_BOTH);
                 menu.setVisible(true);
 	}
 	
