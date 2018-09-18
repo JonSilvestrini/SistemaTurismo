@@ -5,7 +5,13 @@
  */
 package sistema.classes;
 
+import java.text.SimpleDateFormat;
+import java.time.Instant;
 import javax.swing.JOptionPane;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.TimerTask;
+import java.util.Timer;
 
 /**
  *
@@ -16,8 +22,17 @@ public class frmMenu extends javax.swing.JFrame {
 	/**
 	 * Creates new form frmMenu
 	 */
+    
+        Calendar calendario = Calendar.getInstance();
+        SimpleDateFormat sdf = new SimpleDateFormat("HH:mm:ss");
+        Date hora;
+        Timer tempo;
+        
 	public frmMenu() {
 		initComponents();
+                lblData.setText(Integer.toString(calendario.get(Calendar.YEAR)) + "-" + Integer.toString(calendario.get(Calendar.MONTH)+1) + "-" + Integer.toString(calendario.get(Calendar.DAY_OF_MONTH)));
+                tempo = new Timer();
+                tempo.schedule(new Hora(), 0, 1000);
 	}
 
 	/**
@@ -31,11 +46,14 @@ public class frmMenu extends javax.swing.JFrame {
 
         jSeparator1 = new javax.swing.JSeparator();
         jToolBar1 = new javax.swing.JToolBar();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
+        btnUsers = new javax.swing.JButton();
+        btnDisco = new javax.swing.JButton();
+        btnPrinter = new javax.swing.JButton();
+        btnDinheiro = new javax.swing.JButton();
+        btnAnexo = new javax.swing.JButton();
+        btnCancelar = new javax.swing.JButton();
+        lblData = new javax.swing.JLabel();
+        lblHora = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
@@ -59,35 +77,45 @@ public class frmMenu extends javax.swing.JFrame {
         jToolBar1.setFloatable(false);
         jToolBar1.setRollover(true);
 
-        jButton1.setText("jButton1");
-        jButton1.setFocusable(false);
-        jButton1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton1.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        jToolBar1.add(jButton1);
+        btnUsers.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/usuarios.png"))); // NOI18N
+        btnUsers.setFocusable(false);
+        btnUsers.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnUsers.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jToolBar1.add(btnUsers);
 
-        jButton2.setText("jButton2");
-        jButton2.setFocusable(false);
-        jButton2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton2.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        jToolBar1.add(jButton2);
+        btnDisco.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/hd.png"))); // NOI18N
+        btnDisco.setFocusable(false);
+        btnDisco.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnDisco.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jToolBar1.add(btnDisco);
 
-        jButton3.setText("jButton3");
-        jButton3.setFocusable(false);
-        jButton3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton3.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        jToolBar1.add(jButton3);
+        btnPrinter.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/impressora.png"))); // NOI18N
+        btnPrinter.setFocusable(false);
+        btnPrinter.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnPrinter.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jToolBar1.add(btnPrinter);
 
-        jButton4.setText("jButton4");
-        jButton4.setFocusable(false);
-        jButton4.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton4.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        jToolBar1.add(jButton4);
+        btnDinheiro.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/dinheiro.png"))); // NOI18N
+        btnDinheiro.setFocusable(false);
+        btnDinheiro.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnDinheiro.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jToolBar1.add(btnDinheiro);
 
-        jButton5.setText("jButton5");
-        jButton5.setFocusable(false);
-        jButton5.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton5.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        jToolBar1.add(jButton5);
+        btnAnexo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/anexo.png"))); // NOI18N
+        btnAnexo.setFocusable(false);
+        btnAnexo.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnAnexo.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jToolBar1.add(btnAnexo);
+
+        btnCancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cancelar.png"))); // NOI18N
+        btnCancelar.setFocusable(false);
+        btnCancelar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnCancelar.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jToolBar1.add(btnCancelar);
+
+        lblData.setText("jLabel1");
+
+        lblHora.setText("jLabel2");
 
         jMenu1.setText("Cadastro");
 
@@ -148,16 +176,24 @@ public class frmMenu extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jSeparator1, javax.swing.GroupLayout.DEFAULT_SIZE, 400, Short.MAX_VALUE)
+            .addComponent(jSeparator1, javax.swing.GroupLayout.DEFAULT_SIZE, 604, Short.MAX_VALUE)
             .addComponent(jToolBar1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(lblData)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(lblHora)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addComponent(jToolBar1, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 235, Short.MAX_VALUE)
+                .addComponent(jToolBar1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 312, Short.MAX_VALUE)
                 .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(20, 20, 20))
+                .addGap(5, 5, 5)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblData)
+                    .addComponent(lblHora)))
         );
 
         pack();
@@ -173,18 +209,25 @@ public class frmMenu extends javax.swing.JFrame {
         if (JOptionPane.showConfirmDialog(rootPane, "Deseja realmente sair?","Sair",JOptionPane.YES_NO_OPTION)==0)
             System.exit(0);
     }//GEN-LAST:event_menuSairActionPerformed
-
+    
+    class Hora extends TimerTask{
+        public void run(){
+           hora = calendario.getTime();
+           lblHora.setText(sdf.format(hora));
+        }
+    }
 	/**
 	 * @param args the command line arguments
 	 */
 	
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
+    private javax.swing.JButton btnAnexo;
+    private javax.swing.JButton btnCancelar;
+    private javax.swing.JButton btnDinheiro;
+    private javax.swing.JButton btnDisco;
+    private javax.swing.JButton btnPrinter;
+    private javax.swing.JButton btnUsers;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
@@ -200,6 +243,8 @@ public class frmMenu extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem9;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JToolBar jToolBar1;
+    private javax.swing.JLabel lblData;
+    private javax.swing.JLabel lblHora;
     private javax.swing.JMenuItem menuSair;
     // End of variables declaration//GEN-END:variables
 }
