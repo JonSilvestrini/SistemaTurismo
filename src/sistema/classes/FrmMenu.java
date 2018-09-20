@@ -17,7 +17,7 @@ import java.util.Timer;
  *
  * @author potato
  */
-public class frmMenu extends javax.swing.JFrame {
+public class FrmMenu extends javax.swing.JFrame {
 
 	/**
 	 * Creates new form frmMenu
@@ -28,7 +28,7 @@ public class frmMenu extends javax.swing.JFrame {
         Date hora;
         Timer tempo;
         
-	public frmMenu() {
+	public FrmMenu() {
 		initComponents();
                 lblData.setText(Integer.toString(calendario.get(Calendar.YEAR)) + "-" + Integer.toString(calendario.get(Calendar.MONTH)+1) + "-" + Integer.toString(calendario.get(Calendar.DAY_OF_MONTH)));
                 tempo = new Timer();
