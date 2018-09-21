@@ -5,8 +5,11 @@
         <group>
             <file>file:/C:/Users/JONATASWILLIAMSILVES/Documents/NetBeansProjects/SistemaTurismo/src/sistema/classes/FrmLogin.java</file>
             <file>file:/C:/Users/JONATASWILLIAMSILVES/Documents/NetBeansProjects/SistemaTurismo/src/persistencia/ConnectionFactory.java</file>
+            <file>file:/C:/Users/JONATASWILLIAMSILVES/Documents/NetBeansProjects/SistemaTurismo/src/sistema/classes/FrmCadVia.java</file>
             <file>file:/C:/Users/JONATASWILLIAMSILVES/Documents/NetBeansProjects/SistemaTurismo/src/sistema/Main.java</file>
+            <file>file:/C:/Users/JONATASWILLIAMSILVES/Documents/NetBeansProjects/SistemaTurismo/src/sistema/classes/FrmCadCli.java</file>
             <file>file:/C:/Users/JONATASWILLIAMSILVES/Documents/NetBeansProjects/SistemaTurismo/src/persistencia/UsuariosDAO.java</file>
+            <file>file:/C:/Users/JONATASWILLIAMSILVES/Documents/NetBeansProjects/SistemaTurismo/src/sistema/classes/FrmMenu.java</file>
             <file>file:/C:/Users/JONATASWILLIAMSILVES/Documents/NetBeansProjects/SistemaTurismo/src/persistencia/Usuarios.java</file>
         </group>
     </open-files>
