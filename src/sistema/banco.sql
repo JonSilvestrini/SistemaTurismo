@@ -15,7 +15,7 @@ create table viagens(
 	codigo int auto_increment,
 	descricao varchar(50),
 	preco float,
-	foto date,
+	foto varchar(50),
 	primary key (codigo)
 );
 

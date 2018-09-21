@@ -3,5 +3,15 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group/>
+        <group>
+            <file>file:/C:/Users/JONATASWILLIAMSILVES/Documents/NetBeansProjects/SistemaTurismo/src/sistema/classes/FrmLogin.java</file>
+            <file>file:/C:/Users/JONATASWILLIAMSILVES/Documents/NetBeansProjects/SistemaTurismo/src/persistencia/ConnectionFactory.java</file>
+            <file>file:/C:/Users/JONATASWILLIAMSILVES/Documents/NetBeansProjects/SistemaTurismo/src/sistema/classes/FrmCadVia.java</file>
+            <file>file:/C:/Users/JONATASWILLIAMSILVES/Documents/NetBeansProjects/SistemaTurismo/src/sistema/Main.java</file>
+            <file>file:/C:/Users/JONATASWILLIAMSILVES/Documents/NetBeansProjects/SistemaTurismo/src/sistema/classes/FrmCadCli.java</file>
+            <file>file:/C:/Users/JONATASWILLIAMSILVES/Documents/NetBeansProjects/SistemaTurismo/src/persistencia/UsuariosDAO.java</file>
+            <file>file:/C:/Users/JONATASWILLIAMSILVES/Documents/NetBeansProjects/SistemaTurismo/src/sistema/classes/FrmMenu.java</file>
+            <file>file:/C:/Users/JONATASWILLIAMSILVES/Documents/NetBeansProjects/SistemaTurismo/src/persistencia/Usuarios.java</file>
+        </group>
     </open-files>
 </project-private>
