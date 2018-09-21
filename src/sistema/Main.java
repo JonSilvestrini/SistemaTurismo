@@ -5,6 +5,7 @@
  */
 package sistema;
 
+import sistema.classes.Login;
 import sistema.classes.frmMenu;
 
 /**
@@ -18,8 +19,9 @@ public class Main {
 	 */
 	public static void main(String[] args) {
 		// TODO code application logic here
-                frmMenu menu = new frmMenu();
-                menu.setVisible(true);
+                Login telaLogin = new Login();
+		telaLogin.setVisible(true);
+		
 	}
 	
 }
