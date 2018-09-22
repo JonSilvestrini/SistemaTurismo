@@ -127,6 +127,10 @@ public class FrmCadCli extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(rootPane, "Algum campo está em branco");
         } else{
             Clientes cliente = new Clientes();
+	    cliente.setNome(nome);
+	    cliente.setFone(fone);
+	    cliente.setData_nasc(datanasc);
+	    
             
         }
 

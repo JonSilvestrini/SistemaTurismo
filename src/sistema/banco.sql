@@ -40,3 +40,5 @@ create table vendas(
 alter table vendas add foreign key (codcli) references clientes (codigo);
 
 alter table vendas add foreign key (codvi) references viagens (codigo);
+
+insert into usuarios values (0, 'admin', '123');

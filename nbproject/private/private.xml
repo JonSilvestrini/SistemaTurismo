@@ -2,16 +2,29 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
         <group>
-            <file>file:/C:/Users/JONATASWILLIAMSILVES/Documents/NetBeansProjects/SistemaTurismo/src/sistema/classes/FrmLogin.java</file>
-            <file>file:/C:/Users/JONATASWILLIAMSILVES/Documents/NetBeansProjects/SistemaTurismo/src/persistencia/ConnectionFactory.java</file>
-            <file>file:/C:/Users/JONATASWILLIAMSILVES/Documents/NetBeansProjects/SistemaTurismo/src/sistema/classes/FrmCadVia.java</file>
-            <file>file:/C:/Users/JONATASWILLIAMSILVES/Documents/NetBeansProjects/SistemaTurismo/src/sistema/Main.java</file>
-            <file>file:/C:/Users/JONATASWILLIAMSILVES/Documents/NetBeansProjects/SistemaTurismo/src/sistema/classes/FrmCadCli.java</file>
-            <file>file:/C:/Users/JONATASWILLIAMSILVES/Documents/NetBeansProjects/SistemaTurismo/src/persistencia/UsuariosDAO.java</file>
-            <file>file:/C:/Users/JONATASWILLIAMSILVES/Documents/NetBeansProjects/SistemaTurismo/src/sistema/classes/FrmMenu.java</file>
-            <file>file:/C:/Users/JONATASWILLIAMSILVES/Documents/NetBeansProjects/SistemaTurismo/src/persistencia/Usuarios.java</file>
+            <file>file:/home/potato/NetBeansProjects/Sistema/src/sistema/classes/FrmCadVia.java</file>
+            <file>file:/home/potato/NetBeansProjects/Sistema/src/sistema/classes/FrmCadUser.java</file>
+            <file>file:/home/potato/NetBeansProjects/Sistema/src/persistencia/Usuarios.java</file>
+            <file>file:/home/potato/NetBeansProjects/Sistema/src/sistema/classes/FrmCadCli.java</file>
+            <file>file:/home/potato/NetBeansProjects/Sistema/src/persistencia/UsuariosDAO.java</file>
+            <file>file:/home/potato/NetBeansProjects/Sistema/src/sistema/classes/FrmLogin.java</file>
+            <file>file:/home/potato/NetBeansProjects/Sistema/src/persistencia/Clientes.java</file>
+            <file>file:/home/potato/NetBeansProjects/Sistema/src/persistencia/ClientesDAO.java</file>
+            <file>file:/home/potato/NetBeansProjects/Sistema/src/sistema/banco.sql</file>
+        </group>
+        <group>
+            <file>file:/home/potato/NetBeansProjects/Sistema/src/sistema/classes/FrmCadVia.java</file>
+            <file>file:/home/potato/NetBeansProjects/Sistema/src/sistema/classes/FrmCadUser.java</file>
+            <file>file:/home/potato/NetBeansProjects/Sistema/src/persistencia/Usuarios.java</file>
+            <file>file:/home/potato/NetBeansProjects/Sistema/src/sistema/classes/FrmMenu.java</file>
+            <file>file:/home/potato/NetBeansProjects/Sistema/src/sistema/classes/FrmCadCli.java</file>
+            <file>file:/home/potato/NetBeansProjects/Sistema/src/persistencia/UsuariosDAO.java</file>
+            <file>file:/home/potato/NetBeansProjects/Sistema/src/sistema/classes/FrmLogin.java</file>
+            <file>file:/home/potato/NetBeansProjects/Sistema/src/persistencia/Clientes.java</file>
+            <file>file:/home/potato/NetBeansProjects/Sistema/src/persistencia/ClientesDAO.java</file>
+            <file>file:/home/potato/NetBeansProjects/Sistema/src/persistencia/ConnectionFactory.java</file>
+            <file>file:/home/potato/NetBeansProjects/Sistema/src/sistema/banco.sql</file>
         </group>
     </open-files>
 </project-private>

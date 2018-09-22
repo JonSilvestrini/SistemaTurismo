@@ -5,8 +5,6 @@
  */
 package persistencia;
 
-import java.util.Date;
-
 /**
  *
  * @author jonatas
@@ -14,7 +12,7 @@ import java.util.Date;
 public class Clientes {
     private int codigo;
     private String nome, fone;
-    private Date data_nasc;
+    private String data_nasc;
 
     public int getCodigo() {
         return codigo;
@@ -40,11 +38,11 @@ public class Clientes {
         this.fone = fone;
     }
 
-    public Date getData_nasc() {
+    public String getData_nasc() {
         return data_nasc;
     }
 
-    public void setData_nasc(Date data_nasc) {
+    public void setData_nasc(String data_nasc) {
         this.data_nasc = data_nasc;
     }
     
