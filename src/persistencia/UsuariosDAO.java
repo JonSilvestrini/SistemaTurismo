@@ -60,10 +60,12 @@ public class UsuariosDAO {
 	
 	public void insert(String nome, String senha) throws SQLException{
 		Connection conn = ConnectionFactory.conectar();
-		String sql = "insert into usuarios (nome, senha) values (?,?)";
+		String sql = "insert into usuarios values (0,?,?)";
 		PreparedStatement stmt = conn.prepareStatement(sql);
 		stmt.setString(1, nome);
 		stmt.setString(2, senha);
 		stmt.executeQuery();
 	}
+        
+        public void update
 }

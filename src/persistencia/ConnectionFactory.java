@@ -16,7 +16,7 @@ import java.sql.SQLException;
 public final class ConnectionFactory {
     
     public static Connection conectar() throws SQLException{
-        return DriverManager.getConnection("jdbc:mysql://localhost/banco?user=root");
+        return DriverManager.getConnection("jdbc:mysql://localhost:3306:/banco", "root", "");
     }
     
 }
