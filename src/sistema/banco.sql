@@ -15,7 +15,7 @@ create table viagens(
 	codigo int auto_increment,
 	descricao varchar(50),
 	preco float,
-	foto date,
+	foto varchar(50),
 	primary key (codigo)
 );
 
@@ -40,3 +40,5 @@ create table vendas(
 alter table vendas add foreign key (codcli) references clientes (codigo);
 
 alter table vendas add foreign key (codvi) references viagens (codigo);
+
+insert into usuarios values (0, 'admin', '123');

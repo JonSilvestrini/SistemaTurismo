@@ -5,7 +5,8 @@
  */
 package sistema;
 
-import sistema.classes.frmMenu;
+import java.sql.SQLException;
+import sistema.classes.FrmLogin;
 
 /**
  *
@@ -16,10 +17,11 @@ public class Main {
 	/**
 	 * @param args the command line arguments
 	 */
-	public static void main(String[] args) {
+	public static void main(String[] args) throws SQLException {
 		// TODO code application logic here
-                frmMenu menu = new frmMenu();
-                menu.setVisible(true);
+                FrmLogin login = new FrmLogin();
+                login.setVisible(true);
+                
 	}
 	
 }
