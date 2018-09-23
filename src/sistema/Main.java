@@ -5,21 +5,21 @@
  */
 package sistema;
 
+import java.io.IOException;
 import java.sql.SQLException;
 import sistema.classes.FrmLogin;
 
 /**
  *
- * @author potato
+ * @author Jonatas
  */
 public class Main {
 
 	/**
 	 * @param args the command line arguments
 	 */
-	public static void main(String[] args) throws SQLException {
-		// TODO code application logic here
-                FrmLogin login = new FrmLogin();
+	public static void main(String[] args) throws SQLException, IOException {
+	        FrmLogin login = new FrmLogin();
                 login.setVisible(true);
                 
 	}
