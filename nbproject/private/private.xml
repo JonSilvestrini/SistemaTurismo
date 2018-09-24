@@ -10,8 +10,10 @@
             <file>file:/home/jonatas/NetBeansProjects/SistemaTurismo/src/persistencia/UsuariosDAO.java</file>
         </group>
         <group>
-            <file>file:/home/jonatas/NetBeansProjects/SistemaTurismo/src/persistencia/ClientesDAO.java</file>
+            <file>file:/home/jonatas/NetBeansProjects/SistemaTurismo/src/sistema/classes/FrmCadUser.java</file>
+            <file>file:/home/jonatas/NetBeansProjects/SistemaTurismo/src/persistencia/ManipulaBanco.java</file>
             <file>file:/home/jonatas/NetBeansProjects/SistemaTurismo/src/sistema/Main.java</file>
+            <file>file:/home/jonatas/NetBeansProjects/SistemaTurismo/src/sistema/classes/FrmMenu.java</file>
             <file>file:/home/jonatas/NetBeansProjects/SistemaTurismo/src/sistema/classes/FrmLogin.java</file>
             <file>file:/home/jonatas/NetBeansProjects/SistemaTurismo/src/persistencia/ConnectionFactory.java</file>
             <file>file:/home/jonatas/NetBeansProjects/SistemaTurismo/src/persistencia/UsuariosDAO.java</file>

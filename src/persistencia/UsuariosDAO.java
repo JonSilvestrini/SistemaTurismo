@@ -5,14 +5,12 @@
  */
 package persistencia;
 
-import java.io.IOException;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
-import persistencia.ConnectionFactory;
 
 /**
  *
@@ -22,7 +20,7 @@ public class UsuariosDAO {
 
     private Usuarios user;
 
-    public List findAll() throws SQLException, IOException {
+    public List findAll() throws SQLException{
         String sql = "select * from usuarios;";
         Connection conn = ConnectionFactory.conectar();
         PreparedStatement stmt = conn.prepareStatement(sql);
@@ -40,7 +38,7 @@ public class UsuariosDAO {
         return users;
     }
 
-    public List select(String value, String column) throws SQLException, IOException {
+    public List select(String value, String column) throws SQLException{
         Connection conn = ConnectionFactory.conectar();
         String sql = "select * from usuarios where ?=?;";
         PreparedStatement stmt = conn.prepareStatement(sql);
@@ -60,7 +58,7 @@ public class UsuariosDAO {
         return users;
     }
 
-    public void insert(String nome, String senha) throws SQLException, IOException {
+    public void insert(String nome, String senha) throws SQLException{
         Connection conn = ConnectionFactory.conectar();
         String sql = "insert into usuarios values (0,?,?)";
         PreparedStatement stmt = conn.prepareStatement(sql);
@@ -71,7 +69,7 @@ public class UsuariosDAO {
         conn.close();
     }
 
-    public void update(Usuarios user) throws SQLException, IOException {
+    public void update(Usuarios user) throws SQLException{
         Connection conn = ConnectionFactory.conectar();
         String sql = "update usuarios set nome=?, senha=? where codigo=?)";
         PreparedStatement stmt = conn.prepareStatement(sql);

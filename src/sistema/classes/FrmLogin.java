@@ -9,12 +9,8 @@ package sistema.classes;
  *
  * @author jonatas
  */
-import java.io.IOException;
 import java.sql.SQLException;
-import java.util.ArrayList;
 import java.util.List;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 import persistencia.Usuarios;
 import persistencia.UsuariosDAO;
@@ -26,7 +22,7 @@ public class FrmLogin extends javax.swing.JFrame {
 	 */
 	private List<Usuarios> users;
 
-	public FrmLogin() throws SQLException, IOException {
+	public FrmLogin() throws SQLException{
 		initComponents();
 		UsuariosDAO userdb = new UsuariosDAO();
 		this.users = userdb.findAll();

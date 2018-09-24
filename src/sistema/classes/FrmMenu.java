@@ -5,13 +5,15 @@
  */
 package sistema.classes;
 
+import java.sql.SQLException;
 import java.text.SimpleDateFormat;
-import java.time.Instant;
 import javax.swing.JOptionPane;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.TimerTask;
 import java.util.Timer;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -216,7 +218,12 @@ public class FrmMenu extends javax.swing.JFrame {
 
         private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
                 // TODO add your handling code here:
-		FrmCadUser caduser = new FrmCadUser();
+		FrmCadUser caduser = null;
+            try {
+                caduser = new FrmCadUser();
+            } catch (SQLException ex) {
+                Logger.getLogger(FrmMenu.class.getName()).log(Level.SEVERE, null, ex);
+            }
 		caduser.setVisible(true);
 		
         }//GEN-LAST:event_jMenuItem3ActionPerformed
