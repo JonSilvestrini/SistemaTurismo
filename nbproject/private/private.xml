@@ -14,19 +14,20 @@
             <file>file:/home/potato/NetBeansProjects/Sistema/src/persistencia/ClientesDAO.java</file>
             <file>file:/home/potato/NetBeansProjects/Sistema/src/persistencia/ConnectionFactory.java</file>
             <file>file:/home/potato/NetBeansProjects/Sistema/src/sistema/banco.sql</file>
+            <file>file:/home/jonatas/NetBeansProjects/SistemaTurismo/src/persistencia/ClientesDAO.java</file>
+            <file>file:/home/jonatas/NetBeansProjects/SistemaTurismo/src/sistema/Main.java</file>
+            <file>file:/home/jonatas/NetBeansProjects/SistemaTurismo/src/sistema/classes/FrmLogin.java</file>
+            <file>file:/home/jonatas/NetBeansProjects/SistemaTurismo/src/persistencia/ConnectionFactory.java</file>
+            <file>file:/home/jonatas/NetBeansProjects/SistemaTurismo/src/persistencia/UsuariosDAO.java</file>
         </group>
         <group>
-            <file>file:/home/potato/NetBeansProjects/Sistema/src/sistema/classes/FrmCadVia.java</file>
-            <file>file:/home/potato/NetBeansProjects/Sistema/src/sistema/classes/FrmCadUser.java</file>
-            <file>file:/home/potato/NetBeansProjects/Sistema/src/persistencia/Usuarios.java</file>
-            <file>file:/home/potato/NetBeansProjects/Sistema/src/sistema/classes/FrmMenu.java</file>
-            <file>file:/home/potato/NetBeansProjects/Sistema/src/sistema/classes/FrmCadCli.java</file>
-            <file>file:/home/potato/NetBeansProjects/Sistema/src/persistencia/UsuariosDAO.java</file>
-            <file>file:/home/potato/NetBeansProjects/Sistema/src/sistema/classes/FrmLogin.java</file>
-            <file>file:/home/potato/NetBeansProjects/Sistema/src/persistencia/Clientes.java</file>
-            <file>file:/home/potato/NetBeansProjects/Sistema/src/persistencia/ClientesDAO.java</file>
-            <file>file:/home/potato/NetBeansProjects/Sistema/src/persistencia/ConnectionFactory.java</file>
-            <file>file:/home/potato/NetBeansProjects/Sistema/src/sistema/banco.sql</file>
+            <file>file:/home/jonatas/NetBeansProjects/SistemaTurismo/src/sistema/classes/FrmCadUser.java</file>
+            <file>file:/home/jonatas/NetBeansProjects/SistemaTurismo/src/persistencia/ManipulaBanco.java</file>
+            <file>file:/home/jonatas/NetBeansProjects/SistemaTurismo/src/sistema/Main.java</file>
+            <file>file:/home/jonatas/NetBeansProjects/SistemaTurismo/src/sistema/classes/FrmMenu.java</file>
+            <file>file:/home/jonatas/NetBeansProjects/SistemaTurismo/src/sistema/classes/FrmLogin.java</file>
+            <file>file:/home/jonatas/NetBeansProjects/SistemaTurismo/src/persistencia/ConnectionFactory.java</file>
+            <file>file:/home/jonatas/NetBeansProjects/SistemaTurismo/src/persistencia/UsuariosDAO.java</file>
         </group>
     </open-files>
 </project-private>

@@ -8,15 +8,14 @@ package persistencia;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
-
 /**
  *
  * @author jonatas
  */
 public final class ConnectionFactory {
-    
+
     public static Connection conectar() throws SQLException{
-        return DriverManager.getConnection("jdbc:mysql://localhost/banco?user=root");
+            return DriverManager.getConnection("jdbc:mysql://192.168.0.104:3306:/banco", "jonatas", "");
     }
-    
+
 }
